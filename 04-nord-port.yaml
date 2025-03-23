@@ -15,3 +15,4 @@ spec:
   - protocol: TCP
     port: 80 #service-port
     targetPort: 80 #target-port
+    nodePort: 31537
