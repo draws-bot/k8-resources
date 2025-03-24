@@ -24,8 +24,9 @@ spec:
     spec:
       containers:
       - name: nginx
-        #image: nginx
-        image: nginx:stable-perl
+        image: nginx
+
 
 
 ##version update and image update will not happen here ##
+#image: nginx:stable-perl
