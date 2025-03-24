@@ -25,6 +25,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: nginx:stable-perl
 
 ##up to here is fine remaining may be useful for other u can see both pod definition and down pod is same       
