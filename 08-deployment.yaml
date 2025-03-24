@@ -27,19 +27,4 @@ spec:
       - name: nginx
         image: nginx
 
-##up to here is fine remaining may be useful for other u can see both pod definition and down pod is same        
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx
-spec:
-  selector:
-    app: nginx
-    tier: web
-    project: test-project
-  ports:
-  - protocol: TCP
-    port: 80 #service-port
-    targetPort: 80 #target-port
+##up to here is fine remaining may be useful for other u can see both pod definition and down pod is same       
