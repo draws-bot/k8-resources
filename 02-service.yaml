@@ -5,7 +5,7 @@ kind: Service
 metadata:
   name: nginx
 spec:
-  selector:
+  selector:                                            ##nginx service will create from image of nginx at 03-nginx.yaml it will takes from selector
     name: frontend
     project: expense
     component: frontend

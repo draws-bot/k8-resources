@@ -1,11 +1,9 @@
-#first create nginx pod then create it directly it will create service and also nord port
-
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-np
+  name: nginx-lb
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     name: frontend
     project: expense
