@@ -8,7 +8,7 @@ metadata:
     purpose: deployment
     tier: web
 spec:
-  replicas: 5
+  replicas: 20
   selector:
     matchLabels:
       app: nginx
@@ -27,4 +27,19 @@ spec:
       - name: nginx
         image: nginx:stable-perl
 
-##up to here is fine remaining may be useful for other u can see both pod definition and down pod is same       
+##up to here is fine remaining may be useful for other u can see both pod definition and down pod is same        
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+spec:
+  selector:
+    app: nginx
+    tier: web
+    project: test-project
+  ports:
+  - protocol: TCP
+    port: 80 #service-port
+    targetPort: 80 #target-port
