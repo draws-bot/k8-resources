@@ -1,4 +1,4 @@
-
+#pod defination#
 kind: Pod
 apiVersion: v1
 metadata:
@@ -14,6 +14,8 @@ spec:
     image: nginx
 
 ---
+
+##it will create service called nord port###
 
 apiVersion: v1
 kind: Service
