@@ -43,3 +43,14 @@ spec:
   - protocol: TCP
     port: 80 #service-port
     targetPort: 80 #target-port
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx 
+data:
+  course: "DevOps with AWS"
+  trainer: "ssandeep"
+  github: "https://github.com/draws-bot/k8-resources.git"
