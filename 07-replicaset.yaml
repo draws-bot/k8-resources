@@ -9,7 +9,7 @@ metadata:
     tier: frontend
 spec:
   # modify replicas according to your case
-  replicas: 3
+  replicas: 3                         ## called auto-scaling in kubernetes
   selector:
     matchLabels:
       tier: frontend
