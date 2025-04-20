@@ -35,7 +35,7 @@ kind: Service
 metadata:
   name: nginx
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: nginx
     tier: web
@@ -45,7 +45,6 @@ spec:
     port: 80 #service-port
     targetPort: 80 #target-port
     nodePort: 31537    
-
 ---
 
 apiVersion: v1
